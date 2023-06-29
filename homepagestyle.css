@@ -1,0 +1,1135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*overflow-x: hidden;*/
+    scroll-behavior: smooth;
+    overflow: auto;
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: #FCFCFC;
+    --secondary-color: #323132;
+    --tertiary-color: #000000;
+}
+
+.dark-theme {
+    --primary-color: #161616;
+    --secondary-color: #f5f5f5;
+    --tertiary-color: #6591d4;
+}
+
+#icon {
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+}
+
+/*Scroll button starts here*/
+
+.scroll-top {
+    height: 60px;
+    width: 60px;
+    background-color: #FFC907;;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.scroll-top svg {
+    width: 50%;
+    color: black;
+    pointer-events: none;
+}
+
+.scroll-top:hover {
+    transform: scale(1);
+}
+
+/*Scroll button ends here*/
+
+h2 {
+    color: #FFC907;
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #FFC907;
+    font-size: 1.8rem;
+
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+header li, a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #FFC907;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+.logo {
+    width: 6%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: var(--tertiary-color);
+}
+
+/* .yellowbanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellowbanner img {
+    width: 100%;
+    height: auto;
+} */
+
+.homepage-head {
+    background-image: url(/Images/banner.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 45rem;
+    color: white;
+    text-shadow: 1px 1px 0 black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: Georgia;
+    font-size: 8.5rem;
+    font-weight: 1rem;
+    color: transparent;
+    background: url(https://media.giphy.com/media/3HoB7BmMnKMdq/giphy.gif) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    margin-bottom: 1rem;
+
+}
+
+.introwaterstats h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+
+.introwaterstats .compstats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    color: #6C6C45;
+    justify-items: center;
+    width: 95%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.introwaterstats .compstats img {
+    width: 80%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.waterpicture img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+}
+
+.wateerstatsconclusion h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.projectstats img {
+    width: 80%;
+    height: auto;
+
+}
+
+.projectstats ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+    justify-items: center;
+}
+
+
+.waterdonations {
+    position: relative;
+}
+
+/* Hide nav bar and resize Title*/
+/* SMALL MOBILE*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    header {
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        margin-top: 4.5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+/* Hide nav bar and resize Title*/
+/* MOBILE*/
+@media only screen and (min-width: 516px) and (max-width: 768px) {
+    .banner h1 {
+        font-size: 5.5rem;
+        margin-top: 3rem;
+
+    }
+}
+
+
+/* Hide Hamburger menu for desktop*/
+@media only screen and (min-width: 769px) {
+    .navigation {
+        display: none;
+    }
+
+    .mainparagraph p {
+        display: flex;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+    }
+
+    .cleanwaterstats h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .cleanwaterstats .watereffects li {
+        list-style: none;
+    }
+
+    .cleanwaterstats .watereffects li p {
+        color: var(--secondary-color);
+        font-size: 1.3rem;
+        font-family: 'Times New Roman', Times, serif;
+        max-width: 40ch;
+    }
+
+
+    .cleanwaterstats .watereffects img {
+        width: 80%;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .cleanwaterstats .watereffectslist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        color: #FFC907;
+        justify-items: center;
+        width: 90%;
+        padding-bottom: 10%;
+        padding-left: 12rem;
+    }
+
+    .projectstatsoutcome ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 4rem;
+        padding-left: 5%;
+        padding-right: 10%;
+        justify-items: center;
+        padding-bottom: 4rem;
+
+    }
+
+    .waterdonations video {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+    .waterdonationbanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        color: #FFC907;
+        margin-top: 10%;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .waterdonationjoin {
+        display: flex;
+        z-index: 2;
+        text-transform: uppercase;
+        color: #FFC907;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .waterdonationstats h3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-bottom: 1.2rem;
+        padding-left: 2rem;
+    }
+
+    .donategif iframe {
+        display: flex;
+        justify-content: center;
+        left: auto;
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+
+    .waterdonationstats .donationfund {
+        color: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        margin-top: 1.8rem;
+    }
+
+    #donors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* .waterdonationstats .donorone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        margin-left: 20rem;
+        max-width: 40ch;
+        margin-top: 2rem;
+
+    } */
+
+    /* .waterdonationstats .donortwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20rem;
+        max-width: 51ch;
+        margin-top: 2rem;
+
+    } */
+
+    .joinnowbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+    }
+
+    input[type=submit] {
+        background-color: #FFC907;
+        font-size: 1.2rem;
+        border: none;
+        text-decoration: none;
+        color: ivory;
+        padding: 14px 45px;
+        border-radius: 8px;
+        margin: 0px 25px;
+        width: 80%;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .button {
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: black;
+    }
+}
+
+
+/* Responsive Banner and Hamburger menu*/
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+    /* Hamburger Menu */
+    * {
+
+        list-style-type: none;
+    }
+
+    a, button {
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        width: 250px;
+        color: white;
+    }
+
+    .hamburger, .bar {
+        position: fixed;
+    }
+
+    .hamburger {
+        display: block;
+        top: 5%;
+        left: 95%;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%);
+        border: 0;
+        background: 0 0;
+    }
+
+    .bar {
+        top: 3px;
+        right: 1.5rem;
+        background: #FFC907;
+        width: 100%;
+        height: 4px;
+        transition: all .3s ease-in;
+    }
+
+    #bar2 {
+        top: 11px;
+    }
+
+    #bar3 {
+        top: 19px;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .hamburger.open #bar1 {
+        background-color: #FFC907;
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+
+    .hamburger.open #bar2 {
+        background-color: transparent;
+    }
+
+    .hamburger.open #bar3 {
+        background-color: #FFC907;
+        transform: rotate(-45deg) translate(6px, -5px);
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .navigation {
+        position: fixed;
+        right: -500px;
+        width: 150px;
+        height: 15rem;
+        background-color: black;
+        transition: .5s;
+        z-index: 3;
+    }
+
+
+    header li, a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 15%;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navigation ul li {
+        text-transform: uppercase;
+        padding-left: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .hamburger {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        right: -500px;
+        width: 350px;
+        height: 30rem;
+        background-color: black;
+        transition: .5s;
+        z-index: 3;
+    }
+
+    .logo {
+        width: 15%;
+        cursor: pointer;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 4rem;
+    }
+}
+
+
+/* Resize Body Content
+/* TABLET
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        color: #FFC907;
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        color: #FFC907;
+        ;
+        font-size: 1.8rem;
+
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .navigation {
+        position: fixed;
+        right: -500px;
+        width: 150px;
+        height: 15rem;
+        background-color: black;
+        transition: .5s;
+        z-index: 3;
+    }
+
+
+    header li, a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 15%;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navigation ul li {
+        text-transform: uppercase;
+        padding-left: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .hamburger {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        right: -500px;
+        width: 350px;
+        height: 30rem;
+        background-color: black;
+        transition: .5s;
+        z-index: 3;
+    }
+
+    .logo {
+        width: 15%;
+        cursor: pointer;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-top: 4rem;
+    }
+}*/
+
+
+/* Resize Body Content*/
+/* MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    h2 {
+        color: #FFC907;
+        font-size: 1.8rem;
+        padding-left: 6rem;
+        padding-right: 1rem;
+        max-width: 20ch;
+    }
+
+    h3 {
+        color: #FFC907;
+        font-size: 1.6rem;
+
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: black;
+        max-width: 25ch;
+
+    }
+
+    .mainparagraph p {
+        display: flex;
+        justify-content: center;
+        padding-left: 6rem;
+        padding-right: 2.3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .cleanwaterstats h2 {
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 6rem;
+    }
+
+
+    .cleanwaterstats .watereffects li p {
+        color: black;
+        font-size: 1.6rem;
+        max-width: 40ch;
+    }
+
+
+    .cleanwaterstats .watereffects img {
+        width: 80%;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .cleanwaterstats .watereffectslist {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 90%;
+        padding-bottom: 20%;
+        padding-left: 5rem;
+    }
+
+    .projectstatsoutcome ul {
+        grid-template-columns: repeat (3, 1fr);
+        justify-items: center;
+        padding-top: 2rem;
+        padding-left: 5%;
+        padding-right: 10%;
+        padding-bottom: 4rem;
+
+    }
+
+    #triplestats li p {
+        font-size: 1.6rem;
+        max-width: 20ch;
+        padding-top: 1.2rem;
+        padding-left: 5rem;
+
+    }
+
+    .waterdonations video {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+    .waterdonationbanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        color: #FFC907;
+        margin-top: 10%;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .waterdonationjoin {
+        display: flex;
+        z-index: 2;
+        text-transform: uppercase;
+        color: #FFC907;
+    }
+
+    .waterdonationstats h3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-bottom: 1.2rem;
+        padding-left: 2rem;
+    }
+
+    .donategif iframe {
+        display: flex;
+        justify-content: center;
+        left: auto;
+        margin-top: 10%;
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+
+    .waterdonationstats .donationfund {
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        margin-top: 1.8rem;
+        margin-left: 3rem;
+        max-width: 20ch;
+    }
+
+    .waterdonationstats .donorone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        margin-left: 3rem;
+        max-width: 20ch;
+        margin-top: 2rem;
+
+    }
+
+    .waterdonationstats .donortwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+        max-width: 30ch;
+        margin-top: 2rem;
+
+    }
+
+    .joinnowbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    input[type=submit] {
+        background-color: #FFC907;
+        font-size: 1.2rem;
+        border: none;
+        text-decoration: none;
+        color: ivory;
+        padding: 14px 45px;
+        border-radius: 8px;
+        margin: 0px 25px;
+        width: 80%;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .button {
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: black;
+    }
+
+}
+
+
+/*Footer CSS*/
+
+.footer {
+    background-image: url(/Images/Footer_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25% 0 .5% 0;
+    margin-top: -200px;
+    height: 100%;
+}
+
+.footer h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+#footertag {
+    color: white;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-container {
+    width: 80%;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 8%;
+    padding-bottom: 6%;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-heading-sub {
+    white-space: nowrap;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.footer-heading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.footer-heading a:hover {
+    color: rgb(241, 172, 11);
+    transition: 0.3s ease-out;
+}
+
+/*
+.footer-email-form h2{ 
+    margin-bottom: 2rem;
+    }
+
+#footer-email {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    }
+
+#footer-email-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(159, 78, 31);
+    outline: none;
+    border: none;
+    color: white; 
+    }
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: rgb(107, 107, 219);
+    transition: all 0.4s ease-out;
+    }
+
+*/
+
+.footer-email {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-email-sub {
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+}
+
+#email-field {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #edebe6;
+    background: transparent;
+    outline: none;
+    font-size: 26px;
+    padding: 5px 2px;
+    z-index: 10;
+    color: white;
+}
+
+#email-label {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    color: white;
+    font-size: 18px;
+    transition: bottom 0.3s;
+    cursor: auto;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+#email-error {
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+    transition: top 0.5s;
+}
+
+.copyright{
+    font-size: 14px;
+    color: rgb(174, 170, 170);
+}
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+@media(max-width: 992px) {
+    .container {
+        padding: 20px 100px;
+    }
+
+    #back-to-top-btn {
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px 50px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    #back-to-top-btn {
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        bottom: 6px;
+        right: 6px;
+    }
+}
+
+/* Animations */
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+/* zoomIn */
+/* @keyframes btnEntrance { 
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+      opacity: 1;
+    }    
+  } */
+
+/* fadeInUp */
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/* zoomOut */
+/* @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  } */
+
+/* fadeOutDown */
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}

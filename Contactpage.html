@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="CSS/contactstyle.css" />
+    <script src="/JAVASCRIPT/script.js"></script>
+    <script defer src="/JAVASCRIPT/contactusscript.js"></script>
+</head>
+
+<body>
+ <!-- Scroll Button starts here-->
+ <div class="scroll-top">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+  </svg>
+</div>
+<!-- Scroll Button ends here-->
+ <!--Navbar starts here-->
+ <header>
+    <img class="logo" src="Images/yellowlogobig.png"
+      alt="Profile picture showcasing the owner of the portfolio facing forward with their long, black, wavy hair down while wearing a white, laced long-sleeved shirt. The image has a green circle background and a dark green square border surrounded by two white flowers.">
+    <nav class="navbar" id="screenavbar">
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Donationpage.html">Donate</a></li>
+        <li><a href="Contactpage.html">Contact us</a></li>
+        <li><img src="Images/moon.png" id="icon"></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navbar ends here-->
+
+    <!-- Hamburger Menu starts here -->
+<div class="navigation">
+    <button class="hamburger" onclick="show()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </button>
+    <img class="logo" src="Images/yellowlogobig.png" alt="">
+    <nav class="navbar2">
+      <ul id="menu-items">
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="Contactpage.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <!--Hamburger Menu ends here--> 
+
+    
+   <!--Contact Section Starts Here--> 
+   <div class="main-div">
+     <div class="contact-head">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="description">
+        <p>We'd love to hear from you!</p>
+    </div>
+    <div class="contact-methods">
+        <div class="contact-icons">
+            <img src="Images/icon_phone.png" alt="image of a phone">
+            <p>Call Us<br>Tel: (646)-688-2323</p>
+        </div>
+        <div class="contact-icons">
+            <img src="Images/icon_email.png" alt="image of a email icon ">
+            <p><br>Email Us<br>charityfakeemail@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <!--Contact Section Ends Here--> 
+
+    <!--Message Form Starts Here-->
+    <div class="container">
+        <form>
+            <h3>Send Us A Message</h3>
+            <input type="text" id="name" placeholder="First Name & Last Name" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+           <textarea id="Message" rows="4" placeholder="Message"></textarea>
+           <button type="submit">Send</button>
+        </form>
+    </div>
+    <!--CMessage Form Ends Here--> 
+
+    <!--Footer Section Starts Here-->
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+         <div class="footer-heading">
+            
+           <!-- <img class="footer-heading-logo" src="Images/CharityWater_logo.png" alt="charity water logo">-->
+            
+            <div class="footer-heading-sub">
+                <h2>Get To Know Us</h2> 
+                <a id="footertag" href="https://www.charitywater.org/about" target="_blank">About Us</a> 
+                <a id="footertag" href="https://www.charitywater.org/global-water-crisis" target="_blank">What we do</a> 
+                <a id="footertag" href="https://www.charitywater.org/about/financials" target="_blank">Financials & <br> annual reports</a>
+                <a id="footertag" href="https://www.charitywater.org/our-work" target="_blank">Our work</a>
+            </div>
+   
+            <div class="footer-heading-sub">
+                <h2>Connect</h2> 
+                <a id="footertag" href="https://www.charitywater.org/contact" target="_blank">Contact us</a> 
+                <a id="footertag" href="https://www.charitywater.org/about/jobs" target="_blank">Careers</a> 
+                <a id="footertag" href="https://support.charitywater.org/hc/en-us" target="_blank">Help center</a>
+                <a id="footertag" href="https://store.charitywater.org" target="_blank">Shop our store</a>
+            </div>
+   
+            <div class="footer-heading-sub">
+                <h2>Social Media</h2> 
+                <a id="footertag" href="https://www.instagram.com/charitywater/" target="_blank">Instagram</a> 
+                <a id="footertag" href="https://www.facebook.com/charitywater/" target="_blank">Facebook</a> 
+                <a id="footertag" href="https://twitter.com/charitywater?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a id="footertag" href="https://www.youtube.com/@charitywater" target="_blank">Youtube</a>
+            </div>
+         </div>
+  
+         <div class="footer-email">
+            <div class="footer-email-sub">
+                <label id="email-label">Sign Up For Our Emails</label>
+                <input type="email" spellcheck="false" id="email-field" onkeyup="validateEmail()">
+                <span id="email-error"></span> 
+            </div>
+         </div>
+         </div> 
+         <p class="copyright">© 2023| This is a reimagination of the non-profit organization charity:water. This is a Capstone Project for G-Code Spring 23.</p>
+     </div>
+    </footer>
+     
+    <!--Footer Section Ends Here-->
+    <script src="scroll.js"></script>
+    <script src="JAVASCRIPT/lightdark.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scrolltop {
+    height: 60px;
+    width: 60px;
+    background-color: #FFC907;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    /* hover effect default */
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out transform;
+    /* for centering the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrolltop svg {
+    width: 50%;
+    color: black;
+    pointer-events: none;
+}
+
+.scrolltop:hover {
+    transform: scale(1.5);
+}
